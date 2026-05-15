@@ -9,6 +9,10 @@ bitsandbytes
 matplotlib
 pandas
 
+# Notebook convenience (not used by src/). Pre-installing this makes the
+# notebook's `!pip install -q ipython-autotime` cell a fast no-op.
+ipython-autotime
+
 # Fast backend (UNSLOTH=1, the default). Linux / WSL2 only.
 # Comment these out if running the transformers+PEFT fallback (UNSLOTH=0).
 # vllm pinned: trl's GRPOTrainer only supports vllm 0.10.2 as of this writing.
