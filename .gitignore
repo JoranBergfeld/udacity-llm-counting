@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# uv / pip
+.python-version
+uv.lock
+
+# Training artifacts and caches (regenerable, large)
+grpo_saved_lora/
+outputs/
+unsloth_compiled_cache/
+wandb/
+.cache/
+
+# Script logs
+scripts/*.log
+
+# HF / model caches if someone symlinks them in
+.huggingface/
+hf_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Directory for temporary scripts and logs during development and fine-tuning — not meant to be committed
+scripts/

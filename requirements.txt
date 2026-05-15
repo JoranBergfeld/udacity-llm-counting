@@ -1,0 +1,16 @@
+# Base deps for both backends.
+torch
+transformers
+datasets
+peft
+trl
+accelerate
+bitsandbytes
+matplotlib
+pandas
+
+# Fast backend (UNSLOTH=1, the default). Linux / WSL2 only.
+# Comment these out if running the transformers+PEFT fallback (UNSLOTH=0).
+# vllm pinned: trl's GRPOTrainer only supports vllm 0.10.2 as of this writing.
+unsloth
+vllm==0.10.2
